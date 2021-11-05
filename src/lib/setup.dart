@@ -17,7 +17,7 @@ T locateService<T extends Object>() => getIt.get<T>();
 )
 @module
 abstract class RegisterModule {
-  static final _appRouter = AppRouter();
+  static final _appRouter = AppRouter(authenticatedUser: AuthenticatedUser());
   final _navigationService = NavigationService(_appRouter.navigatorKey);
 
   @Injectable(as: Key)
