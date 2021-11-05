@@ -1,3 +1,4 @@
+import 'package:clean_project/services/services.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 import 'package:injectable/injectable.dart';
@@ -16,6 +17,15 @@ T locateService<T extends Object>() => getIt.get<T>();
 )
 @module
 abstract class RegisterModule {
+  static final _appRouter = AppRouter();
+  final _navigationService = NavigationService(_appRouter.navigatorKey);
+
   @Injectable(as: Key)
   UniqueKey get key;
+
+  @singleton
+  AppRouter get appRouter => _appRouter;
+
+  @singleton
+  INavigationService get navigationService => _navigationService;
 }

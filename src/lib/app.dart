@@ -1,15 +1,24 @@
-import 'package:clean_project/screens/screens.dart';
+import 'package:clean_project/services/router.dart';
 import 'package:flutter/material.dart';
 import 'package:injectable/injectable.dart';
 
 @injectable
 class App extends StatelessWidget {
-  const App({Key? key}) : super(key: key);
+  const App({
+    required AppRouter appRouter,
+    Key? key,
+  })  : _appRouter = appRouter,
+        super(key: key);
+
+  final AppRouter _appRouter;
+  static const _appTitle = 'Welcome to clean flutter app';
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: HomeScreen(),
+    return MaterialApp.router(
+      title: _appTitle,
+      routerDelegate: _appRouter.delegate(),
+      routeInformationParser: _appRouter.defaultRouteParser(),
     );
   }
 }

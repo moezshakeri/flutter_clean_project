@@ -19,6 +19,6 @@
         "**/*.freezed.dart": true,
         "**/.flutter-plugins*": true,
         "debug.log": true,
-        "web" : false
+        "web" : true
     }
 }
