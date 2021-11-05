@@ -4,7 +4,7 @@ import 'package:clean_project/screens/screens.dart';
 export 'router.gr.dart';
 
 abstract class Routes {
-  static const message = '/message/:id';
+  static const message = '/message/:message';
 }
 
 @MaterialAutoRouter(
