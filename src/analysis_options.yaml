@@ -1,29 +1,103 @@
-# This file configures the analyzer, which statically analyzes Dart code to
-# check for errors, warnings, and lints.
-#
-# The issues identified by the analyzer are surfaced in the UI of Dart-enabled
-# IDEs (https://dart.dev/tools#ides-and-editors). The analyzer can also be
-# invoked from the command line by running `flutter analyze`.
-
-# The following line activates a set of recommended lints for Flutter apps,
-# packages, and plugins designed to encourage good coding practices.
 include: package:flutter_lints/flutter.yaml
+analyzer:
+  exclude:
+    - lib/**.config.dart
+    - lib/**.freezed.dart
+    - lib/**.gr.dart
+  errors:
+    omit_local_variable_types: error
+    missing_required_param: error
+    missing_return: error
+    always_declare_return_types: error
+    always_put_required_named_parameters_first: error
+    always_use_package_imports: error
+    annotate_overrides: error
+    avoid_annotating_with_dynamic: error
+    avoid_bool_literals_in_conditional_expressions: error
+    avoid_empty_else: error
+    avoid_equals_and_hash_code_on_mutable_classes: error
+    avoid_escaping_inner_quotes: error
+    avoid_field_initializers_in_const_classes: error
+    avoid_function_literals_in_foreach_calls: error
+    avoid_init_to_null: error
+    avoid_print: error
+    avoid_returning_null_for_void: error
+    avoid_setters_without_getters: error
+    avoid_unused_constructor_parameters: error
+    cancel_subscriptions: error
+    close_sinks: error
+    empty_catches: error
+    empty_constructor_bodies: error
+    library_names: error
+    no_duplicate_case_values: error
+    prefer_single_quotes: error
+    sort_constructors_first: error
+    unnecessary_const: error
+    unnecessary_getters_setters: error
+    unnecessary_new: error
+    unnecessary_overrides: error
+    unnecessary_parenthesis: error
+    unnecessary_string_escapes: error
+    unnecessary_this: error
+    use_late_for_private_fields_and_variables: error
+    avoid_implementing_value_types: error
+    always_require_non_null_named_parameters: error
+    avoid_catching_errors: error
+    avoid_null_checks_in_equality_operators: error
+    avoid_positional_boolean_parameters: error
+    avoid_private_typedef_functions: error
+    avoid_redundant_argument_values: error
+    avoid_relative_lib_imports: error
+    avoid_return_types_on_setters: error
+    avoid_returning_null_for_future: error
+    sort_pub_dependencies: error
 
 linter:
-  # The lint rules applied to this project can be customized in the
-  # section below to disable rules from the `package:flutter_lints/flutter.yaml`
-  # included above or to enable additional rules. A list of all available lints
-  # and their documentation is published at
-  # https://dart-lang.github.io/linter/lints/index.html.
-  #
-  # Instead of disabling a lint rule for the entire project in the
-  # section below, it can also be suppressed for a single line of code
-  # or a specific dart file by using the `// ignore: name_of_lint` and
-  # `// ignore_for_file: name_of_lint` syntax on the line or in the file
-  # producing the lint.
   rules:
-    # avoid_print: false  # Uncomment to disable the `avoid_print` rule
-    # prefer_single_quotes: true  # Uncomment to enable the `prefer_single_quotes` rule
-
-# Additional information about this file can be found at
-# https://dart.dev/guides/language/analysis-options
+    - omit_local_variable_types
+    - always_declare_return_types
+    - always_put_required_named_parameters_first
+    - always_use_package_imports
+    - annotate_overrides
+    - avoid_annotating_with_dynamic
+    - avoid_bool_literals_in_conditional_expressions
+    - avoid_empty_else
+    - avoid_equals_and_hash_code_on_mutable_classes
+    - avoid_escaping_inner_quotes
+    - avoid_field_initializers_in_const_classes
+    - avoid_function_literals_in_foreach_calls
+    - avoid_init_to_null
+    - avoid_print
+    - avoid_returning_null_for_void
+    - avoid_setters_without_getters
+    - avoid_unused_constructor_parameters
+    - cancel_subscriptions
+    - close_sinks
+    - empty_catches
+    - empty_constructor_bodies
+    - implementation_imports
+    - library_names
+    - no_duplicate_case_values
+    - prefer_single_quotes
+    - sort_constructors_first
+    - unnecessary_brace_in_string_interps
+    - unnecessary_const
+    - unnecessary_getters_setters
+    - unnecessary_new
+    - unnecessary_overrides
+    - unnecessary_parenthesis
+    - unnecessary_string_escapes
+    - unnecessary_this
+    - unrelated_type_equality_checks
+    - use_late_for_private_fields_and_variables
+    - avoid_implementing_value_types
+    - always_require_non_null_named_parameters
+    - avoid_catching_errors
+    - avoid_null_checks_in_equality_operators
+    - avoid_positional_boolean_parameters
+    - avoid_private_typedef_functions
+    - avoid_redundant_argument_values
+    - avoid_relative_lib_imports
+    - avoid_return_types_on_setters
+    - avoid_returning_null_for_future
+    - sort_pub_dependencies
