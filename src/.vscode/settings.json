@@ -1,0 +1,24 @@
+{
+    "files.exclude": {
+        "**/.dart_tool": true,
+        "**/.packages": true,
+        "**/.idea": true,
+        "**/.metadata": true,
+        "android": true,
+        "build": true,
+        "ios": true,
+        "pubspec.lock": true,
+        "dev.pap.playground.iml": true,
+        "README.md": true,
+        "*.iml": true,
+        ".gitignore": true,
+        "**/*.config.dart": true,
+        "**/*.gr.dart": true,
+        "**/*.g.dart": true,
+        "**/*.mocks.dart": true,
+        "**/*.freezed.dart": true,
+        "**/.flutter-plugins*": true,
+        "debug.log": true,
+        "web" : false
+    }
+}
