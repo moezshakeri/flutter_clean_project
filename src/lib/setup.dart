@@ -28,4 +28,7 @@ abstract class RegisterModule {
 
   @singleton
   INavigationService get navigationService => _navigationService;
+
+  @singleton
+  IAuthService get authService => AuthService();
 }

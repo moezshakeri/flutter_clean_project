@@ -24,6 +24,7 @@ _i1.GetIt $initGetIt(_i1.GetIt get,
   gh.factory<_i3.App>(
       () => _i3.App(appRouter: get<_i4.AppRouter>(), key: get<_i5.Key>()));
   gh.singleton<_i6.AppRouter>(registerModule.appRouter);
+  gh.singleton<_i6.IAuthService>(registerModule.authService);
   gh.singleton<_i6.INavigationService>(registerModule.navigationService);
   gh.factory<_i5.Key>(() => registerModule.key);
   gh.factory<_i7.MessageScreenViewModel>(() => _i7.MessageScreenViewModel());
