@@ -111,6 +111,13 @@ Right now there is only one component in this project to demonstrate how to use 
   * a simple counter component with cubit state management.
   * I used this component inside the [`Home`](https://github.com/moezshakeri/flutter_clean_project/blob/56d767247054896c50d4283c27caa2a5dc601ddb/src/lib/screens/home/home_screen_v.dart) screen.
 
+## Images
+![login](./images/login.png)
+
+![home](./images/home.png)
+
+![message](./images/message.png)
+
 ## Contact me
 
 if you have any question or suggestion, please contact me :
