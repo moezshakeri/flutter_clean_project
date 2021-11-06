@@ -1,4 +1,5 @@
 import 'package:clean_project/base/base.dart';
+import 'package:clean_project/components/components.dart';
 import 'package:clean_project/screens/home/home_screen_vm.dart';
 import 'package:flutter/material.dart';
 
@@ -33,6 +34,8 @@ class HomeScreen extends BaseView<HomeScreenViewModel> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(_title),
+              _buildSpacer(),
+              Counter(),
               _buildSpacer(),
               _buildGotoMessageButton(),
               _buildSpacer(),
